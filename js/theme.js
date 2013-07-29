@@ -36,7 +36,7 @@ readyState(function () {
     $('.panel').css({'margin-top':$('#header').height()});
 
     function introPos() {
-        $('#intro').css({'margin-top':( ($('.box:first').height() / 2) - $('#header').height() - ($('#intro').height() / 2) )});
+        $('#intro').css({'margin-top':( ($('.box:first').height() / 1.1) - $('#header').height() - ($('#intro').height() / 2) )});
     }
 
     introPos();
