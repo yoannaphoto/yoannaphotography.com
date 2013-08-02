@@ -11,6 +11,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="css/flexslider.css" rel="stylesheet" media="screen">
     <link href="css/vegas.css" rel="stylesheet" media="screen">
     <link href="css/style.min.css" rel="stylesheet" media="screen">
 
@@ -23,6 +24,8 @@
 
 <body>
 <div id="overlay"></div>
+<a id="next-slide" href="javascript:void(0)" class="slide-controls"><i class="icon-chevron-right"></i></a>
+<a id="prev-slide" href="javascript:void(0)" class="slide-controls"><i class="icon-chevron-left"></i></a>
 
 <!-- header -->
 <header id="header">
@@ -43,11 +46,11 @@
 
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right" id="navigation">
-                                <li><a href="index.html">Weddings</a></li>
+                                <li><a href="/wedding.html">Weddings</a></li>
                                 <li><a href="/maternity.html">Maternity</a></li>
-                                <li><a href="/babies.html">Babies</a></li>
-                                <li><a href="about.html" class="active">About</a></li>
-                                <li><a href="prices.html">Prices</a></li>
+                                <li><a href="/babies.html" class="active">Babies</a></li>
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="/prices.html">Prices</a></li>
                                 <li><a data-nav="scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -58,30 +61,41 @@
     </div>
 </header>
 
+
+
 <!-- home -->
-<section id="home" class="box">
+<!-- features -->
+<section class="box">
     <div class="container">
-        <div class="panel">
             <div class="row-fluid">
-                <div class="span12 header">
-                    <hgroup>
-                        <h2>About Me</h2>
-                    </hgroup>
-                </div>
-            </div>
-            <div class="row-fluid">
-                <div class="span12 content">
-                    <ul class="row-fluid">
-                        <li class="span6 offset3">
-                            <p>I breathe and dream photography and I feel so lucky that my passion is my career.  I see beauty all around - in the lights and shadows, reflection and looks.  The philosophy behind my lens is to create lovely images of important moments of your life.</p>
+                <div class="span12">
 
-                            <p>Whether you got engaged, planning to get married, expecting a baby or just want to capture a family story - it will be my pleasure to freeze those memories for you to treasure!</p>
 
-                            <p>I love to tell stories, and would love to tell yours!</p>
+                    <div class="flexslider" id="intro">
+                        <ul class="slides">
+                            <li>
+                                <p class="quote">"Home is where your story begins and your heart lives"</p>
+                                <p class="customer">Annie Danielson</p>
+                            </li>
+                            <li>
+                                <p class="quote">"The journey of a thousand miles begins with a single step."</p>
+                                <p class="customer">Lao Tzu</p>
+                            </li>
+                            <li>
+                                <p class="quote">"Always remember to be happy because you never know whos falling in love with your smile."</p>
+                                <p class="customer">Unknown</p>
+                            </li>
+                            <li>
+                                <p class="quote">"Time is the wisest counselor of all."</p>
+                                <p class="customer">Pericles</p>
+                            </li>
+                            <li>
+                                <p class="quote">"It only takes one person to change your life: YOU"</p>
+                                <p class="customer">Ruth Casey</p>
+                            </li>
+                        </ul>
+                    </div>
 
-                            <p>Please send me an email so we can chat about your photo session! Looking forward to hear from you!</p>
-                        </li>
-                    </ul>
 
                 </div>
             </div>
@@ -134,17 +148,17 @@
     </div>
 </section>
 
-
 <!-- scripts -->
 <script type="text/javascript">
     var vegas_images = [
-        { src:'images/gallery/wedding/hm6.jpg', fade:1000 },
-        { src:'images/gallery/wedding/hm9.jpg', fade:1000 }
+        { src:'images/gallery/babies/bs1.jpg', fade:1000 },
+        { src:'images/gallery/babies/bs2.jpg', fade:1000 },
+        { src:'images/gallery/babies/bs3.jpg', fade:1000 }
     ];
 </script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="js/jquery.vegas.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
 

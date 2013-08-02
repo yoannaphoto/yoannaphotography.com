@@ -433,34 +433,39 @@ ul
 /**
  * Back to top
  */
-#back-top
-{
+.slide-controls {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
+    bottom: 45%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 15px 20px;
     color: #fff;
-    background: #333;
-    background: rgba(51, 51, 51, 0.75);
-        -moz-transition: all 600ms;
-        -webkit-transition: all 600ms;
-        -o-transition: all 600ms;
+    background: rgba(51, 51, 51, 0.5);
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -o-transition: all 600ms;
     transition: all 600ms;
 }
 
-#back-top:hover
-{
+.slide-controls:hover {
     text-decoration: none;
     background: #ffd675;
     background: rgba(255, 214, 117, 0.75);
-        -moz-transition: all 600ms;
-        -webkit-transition: all 600ms;
-        -o-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -o-transition: all 600ms;
     transition: all 600ms;
+}
+
+#next-slide
+{
+    right: 30px;
+}
+
+#prev-slide
+{
+    left: 30px;
 }
 
 #overlay {
