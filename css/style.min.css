@@ -237,7 +237,7 @@ ul
 .content
 {
     background: whitesmoke;
-    padding: 90px;
+    padding: 50px;
     text-align: justify;
     text-justify: inter-word;
         -webkit-border-bottom-right-radius: 10px;
@@ -422,20 +422,32 @@ ul
     margin-top: 40px;
 }
 
-/**
- * Google Maps
- */
-#map_canvas
-{
-    height: 290px;
+.social-profiles{
+    padding-top: 20px;
 }
+.social-profiles ul li{
+    display: inline;
+    text-align: center;
+    margin:0 5px;
+}
+
+.social-profiles ul.centerUl li a i {
+    text-decoration:none;
+    color: black;
+    opacity: 0.5;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
 
 /**
  * Back to top
  */
 .slide-controls {
     position: fixed;
-    bottom: 45%;
+    bottom: 5%;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -489,6 +501,11 @@ ul
 /* Normal desktop */
 @media (min-width: 980px) and (max-width: 1199px)
 {
+
+    .flexslider
+    {
+        color:orange;
+    }
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -641,6 +658,12 @@ ul
 /* Landscape phones and down */
 @media (max-width: 480px)
 {
+    #logo {
+        font-size: 26px;
+    }
+    #logo span {
+        font-size: 16px;
+    }
     body
     {
         padding-left: 0;
